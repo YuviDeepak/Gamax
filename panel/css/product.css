@@ -24,6 +24,7 @@
     background: var(--hclr);
     background: rgba(255, 255, 255, 0.347);
     color: white;
+    width: 400px;
 }
 
 .middle1 form h1 {

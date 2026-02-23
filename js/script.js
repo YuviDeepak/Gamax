@@ -67,13 +67,13 @@ if (isloginPassword && islogInemail) {
         EmailError.innerText = "Invalid Email"
         EmailError.style.color="red"
         logInemail.style.border = "1px solid red"
-        alert("Invalid Email");
+        // alert("Invalid Email");
 
     } 
     else if (user.userPassword !== userpassword) {
         PasswordError.innerText = "Invalid Password"
         loginPassword.style.border = "1px solid red"
-        alert("Invalid Password");
+        // alert("Invalid Password");
     } 
     else {
         alert("Login Successfull")
