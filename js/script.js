@@ -70,7 +70,7 @@ if (isloginPassword && islogInemail) {
         alert("Invalid Password");
     } 
     else {
-        window.location.href = "site/index.html";
+        window.location.href = "./site/index.html";
     }
 }
 
