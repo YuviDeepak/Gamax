@@ -703,7 +703,7 @@ header .adc-fav .fav button:hover {
     background-color: rgb(92, 92, 92);
     color: var(--btnclr);
     position: absolute;
-    z-index: 99;
+    z-index: 70;
     top: 50%;
     transform: translateY(-50%);
     left: 35%;
@@ -716,7 +716,7 @@ header .adc-fav .fav button:hover {
     background-color: rgb(92, 92, 92);
     color: var(--btnclr);
     position: absolute;
-    z-index: 99;
+    z-index: 70;
     top: 50%;
     transform: translateY(-50%);
     right: 35%;

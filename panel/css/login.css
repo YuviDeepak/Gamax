@@ -99,13 +99,18 @@ form .new button{
     border: none;
     background: none;
     color: white;
-    font-size: 0.9em;
+    font-size: 1.2em;
     border-radius: 20px;
     /* background-color: black; */
     text-decoration: underline;
     
 
 }
+form .new button:hover{
+    color: black;
+}
+
+
 
 #goToAdminLogin{
     /* border: 1px solid red; */

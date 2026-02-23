@@ -109,13 +109,15 @@ form .new button{
     background: none;
     color: white;
     /* font-size: ; */
-    background: var(--hclr);
+    /* background: var(--hclr); */
     font-family: var(--font);
     border-radius: 20px;
     margin-left: 10px;
+    font-size: 1.2em;
+    text-decoration: underline;
 
 }
 
 form .new button:hover{
-    background: black;
+    color: black;
 }

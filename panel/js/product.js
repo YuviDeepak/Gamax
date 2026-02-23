@@ -139,10 +139,17 @@ function submit() {
         price.style.border = "1px solid red"
         isprice = false
     }
-    else {
+
+    else if(price.value>0){
+
         price_error.innerText = ""
         isprice = true
         price.style.border = "1px solid black"
+    }
+    else {
+        price_error.innerText = "Price Cannot be negative"
+        price.style.border = "1px solid red"
+        isprice = false
 
     }
 
@@ -152,10 +159,16 @@ function submit() {
         stock.style.border = "1px solid red"
         isstock = false
     }
-    else {
+    else if(stock.value>0){
+
         stock_error.innerText = ""
         isstock = true
         stock.style.border = "1px solid black"
+    }
+    else {
+        stock_error.innerText = "Stock cannot be neagtive"
+        stock.style.border = "1px solid red"
+        isstock = false
     }
 
     // //offer validation
@@ -164,10 +177,16 @@ function submit() {
         offer.style.border = "1px solid red"
         isoffer = false
     }
-    else {
+    else if(offer.value>0){
+
         offer_error.innerText = ""
         isoffer = true
         offer.style.border = "1px solid black"
+    }
+    else {
+        offer_error.innerText = "Offer cannot be neagitve"
+        offer.style.border = "1px solid red"
+        isoffer = false
     }
 
     if (isimage && isproduct && iscategory && isprice && isstock && isoffer) {
@@ -182,6 +201,7 @@ function submit() {
                 offer: offer.value
             }
             product_list_array.push(obj)
+            alert("Product has been added")
         }
 
         else {
@@ -197,6 +217,7 @@ function submit() {
                         offer: offer.value
                     }
                 }
+                alert("Product has been upated")
                 return e
             })
         }
@@ -208,7 +229,6 @@ function submit() {
         price.value = ""
         stock.value = ""
         offer.value = ""
-        alert("Product Added")
         localStorage.setItem("product_list", JSON.stringify(product_list_array))
 
 

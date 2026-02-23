@@ -80,7 +80,7 @@ form .btn button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0;
+    padding: 40px 10px;
 }
 
 table {
@@ -91,7 +91,7 @@ table {
 
 table tr td,
 th {
-    padding: 10px;
+    padding: 0px;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -99,8 +99,8 @@ th {
 }
 
 table tr td img{
-    width: 30%;
-    height: 30%;
+    width: 70%;
+    height: 60%;
     object-fit: cover;
 }
 
@@ -110,6 +110,7 @@ table button{
     color: white;
     border-radius: 10px;
     border: none;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width:576px) {

@@ -62,11 +62,12 @@ body{
 }
 
 .menuBar .account {
+    width: 100%;
     /* border: 1px solid red; */
     padding: 0px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     padding: 10px 0 ;
     background-color: black;
@@ -195,7 +196,7 @@ nav .end {
     display: flex;
     gap: 40px;
     color: white;
-    height: 70px;
+    height: 50px;
 }
 
 nav .end button {
@@ -228,6 +229,10 @@ nav .end button {
 .lgt{
     cursor: pointer;
 }
+
+.flex1.tog {
+        transform: translateX(0);
+    }
 
 @media screen and (max-width:576px) {
 

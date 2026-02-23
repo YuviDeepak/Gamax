@@ -8,6 +8,7 @@ let PasswordError = document.querySelector("#PasswordError")
 let logInBtnYes = document.querySelector("#logInBtnYes")
 let goToAdminLogin = document.querySelector("#goToAdminLogin")
 
+let regx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 
 logInBtnYes.addEventListener("click", (e) => {
     e.preventDefault()
@@ -31,10 +32,15 @@ function login() {
         logInemail.style.border = "1px solid red"
     }
 
-    else {
+    else if (regx.test(logInemail.value)){
         EmailError.innerText = ""
         logInemail.style.border = "1px solid black"
         islogInemail = true
+    }
+
+    else {
+        EmailError.innerText = "Invalid email"
+        logInemail.style.border = "1px solid red"
     }
     if (loginPassword.value == "") {
         PasswordError.innerText = "Fill the box"
@@ -70,6 +76,7 @@ if (isloginPassword && islogInemail) {
         alert("Invalid Password");
     } 
     else {
+        alert("Login Successfull")
         window.location.href = "./site/index.html";
     }
 }

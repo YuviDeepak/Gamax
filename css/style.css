@@ -95,15 +95,17 @@ form .new {
 }
 
 form .new button{
-    padding: 0.7em 2em;
+    padding: 0.7em 0.3em;
     /* border-radius: 20px; */
     border: none;
     background: none;
     color: white;
-    font-size: 0.7em;
+    font-size: 1em;
     border-radius: 20px;
     /* background-color: black; */
-    background: var(--hclr);
+    /* background: var(--hclr); */
+    /* background: none; */
+    text-decoration: underline;
     
 
 }
@@ -116,11 +118,13 @@ form .new button{
 
 
 form .new button:hover{
-    background: black;
+    /* background: black; */
+    color: black;
 }
 
 #goToAdminLogin{
     /* border: 1px solid red; */
+    
 }
 
 button{

@@ -164,6 +164,7 @@ function register() {
         if (!occuremail) {
             registerArray.push(obj)
             localStorage.setItem("registerArray", JSON.stringify(registerArray));
+            alert("Registeration Successfull")
             window.location.href="index.html"
         }
         else {

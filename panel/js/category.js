@@ -30,18 +30,20 @@ function addCategory() {
         admnCat_error.innerText = "Fill the Category"
         adminCategory.style.border = "1px solid red"
     }
-    else if(ans){
-        admnCat_error.innerText = "Category Already Exist"
-        adminCategory.style.border = "1px solid red"
-    }
+    // else if(ans){
+    //     admnCat_error.innerText = "Category Already Exist"
+    //     adminCategory.style.border = "1px solid red"
+    // }
     else {
 
         if(upteIndex!=null){
             CatArray[upteIndex]=adminCategory.value
             upteIndex=null
+            alert("Category updated successfully")
         }
         else{
             CatArray.push(adminCategory.value)
+            alert("Category added successfully")
         }
         admnCat_error.innerText = ""
         adminCategory.style.border = "1px solid black"
@@ -100,6 +102,11 @@ function removecategory(cat){
     localStorage.setItem("CatArray", JSON.stringify(CatArray))
 
     catDataTab() 
+    alert("Category deleted successfully")
+}
+
+else{
+        alert("Category is safe")
 
     }
    
