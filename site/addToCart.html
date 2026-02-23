@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/addToCart.css">
+</head>
+
+<body>
+    <header>
+        <label for="nav-check"><i class="fa-solid fa-bars"></i></label>
+        <div class="logo">
+            <div class="innerlogo">
+                <img src="./logo/logo-header.png" alt="">
+            </div>
+        </div>
+        <input type="checkbox" id="nav-check" style="display: none;">
+        <nav>
+            <span><a href="index.html">Home</a></span>
+            <span><a href="about.html">About</a></span>
+            <span><a href="shop.html">Shop</a></span>
+            <span><a href="contact.html">Contact</a></span>
+        </nav>
+        <div class="adc-fav">
+            <div class="adc">
+                <button type="button" id="goToCart"><i class="fa-solid fa-cart-plus"></i></button>
+                <!-- <a href="./addToCart.html">add</a> -->
+                <span class="cartCount">0</span>
+            </div>
+            <div class="fav">
+                <button type="button" id="lgot"><i class="fa-solid fa-right-from-bracket"></i></button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="addcrt " id="addcrtt">
+
+        <!-- <div class="cartBox">
+            <div class="left">
+                <div class="card" data-id="${element.productId}">
+                    <div class="card-top">
+                        <b class="discount">
+                            <p class="offer">${element.offer}</p>% off
+                        </b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="${element.img}" alt="">
+                        <div class="content">
+                            <h2 class="cardProductName">${element.name}</h2>
+                            <h4 class="cardCategory">${element.category}</h4>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <p>$<del class="price">${element.price}</del></p>
+                            <b>$<span class="offerPrice">${element.offerPrice}</span></b>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="middlecart">
+                <div class="prr">
+                    <h3>${element.offerPrice}</h3>
+                </div>
+                <div class="qtybox">
+                    <div class="pp">
+                        <h3>${element.offerPrice}</h3>
+                    </div>
+                    <div class="btn">
+                        <button onclick="addqty()">+</button>
+                        <span class="quntity">1</span>
+                        <button onclick="subqty()">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <button type="button" id="cartRemove" onclick="cardRemove(${element.id})">Remove</button>
+            </div>
+        </div> -->
+
+        <!-- <div class="cartBox total">
+            <div class="wholeAmount">
+                <h1></h1>
+            </div>
+            <div class="WholeAmountBtn">
+                <button type="button">Buy Now</button>
+            </div>
+        </div> -->
+
+
+
+    </div>
+
+
+    <footer>
+        <article class="leftf">
+            <h1>EXP</h1>
+            <section class="image">
+
+            </section>
+        </article>
+        <article class="rightff">
+            <section class="link-1 link">
+                <h3><a href="index.html">Home</a></h3>
+                <h3><a href="about.html">About</a></h3>
+                <h3><a href="shop.html">Shop</a></h3>
+                <h3><a href="contact.html">Contact</a></h3>
+            </section>
+            <section class="link-2 link">
+                <h3><a href="index.html">Blog</a></h3>
+                <h3><a href="shop.html">Offers</a></h3>
+                <h3><a href="contact.html">help</a></h3>
+                <h3><a href="contact.html">FAQ</a></h3>
+            </section>
+            <section class="link-3 link">
+                <div class="nu cc">
+                    <h3>Contact</h3>
+                    <p>6381243283</p>
+                </div>
+                <div class="ch cc">
+                    <h3>Chat wit us</h3>
+                    <p>6381243283</p>
+                </div>
+            </section>
+        </article>
+    </footer>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/addToCart.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>

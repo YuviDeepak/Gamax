@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&display=swap');
+
+
+:root {
+    --font: "Audiowide";
+    --baseclr: black;
+    --hclr: linear-gradient(to left,
+            #180936,
+            #2a0b69,
+            #3d1f79);
+    --btnclr: #2c014b;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+.container{
+    /* border: 1px solid red; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: var(--hclr);
+    font-family: var(--font);
+
+}
+
+.container form{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 400px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.558);
+    box-shadow: 0 0 10px;
+}
+
+form .box{
+    /* border: 1px solid red; */
+}
+
+form label{
+    font-size: 1.3em;
+}
+
+form input{
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.225);
+    border: none;
+    color: white;
+    outline: none;
+}
+
+form .btn{
+    /* border: 1px solid red; */
+    display: grid;
+    place-items: center;
+    /* width: 100%; */
+}
+
+form .btn button{
+    padding: 1em 6em;
+    border-radius: 20px;
+    /* background-color: black;
+    color: white; */
+    border: none;
+
+}
+
+form .new {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 110%;
+    
+}
+
+form .new button{
+    padding: 0.7em 2em;
+    /* border-radius: 20px; */
+    border: none;
+    background: none;
+    color: white;
+    font-size: 0.7em;
+    border-radius: 20px;
+    /* background-color: black; */
+    background: var(--hclr);
+    
+
+}
+
+/* form .new .hi{
+    border: 1px solid red;
+    display: flex;
+} */
+
+
+
+form .new button:hover{
+    background: black;
+}
+
+#goToAdminLogin{
+    /* border: 1px solid red; */
+}
+
+button{
+    background: var(--hclr);
+    color: white;
+}
+
+button:hover{
+    background: black;
+    border: none;
+}

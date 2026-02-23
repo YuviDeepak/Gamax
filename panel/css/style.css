@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&display=swap');
+
+
+:root {
+    --font: "Audiowide";
+    --baseclr: black;
+    --hclr: linear-gradient(to left,
+            #180936,
+            #2a0b69,
+            #3d1f79);
+    --btnclr: #2c014b;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    /* background: url(../backimg/bkimg.png); */
+}
+
+body{
+    background: url(../backimg/bkimg.png) left no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.675);
+    background-blend-mode: color-burn;
+}
+
+
+
+.container {
+    /* border: 1px solid rgb(0, 255, 119); */
+    display: flex;
+    position: relative;
+    padding: 0;
+
+}
+
+.flex1 {
+    /* border: 1px solid blue; */
+
+    /* padding: 10px; */
+    padding: 0px 0;
+    height: 100vh;
+    /* width: 250px; */
+    position: sticky;
+    top: 0;
+    background: var(--hclr);
+    color: white;
+
+}
+
+.menuBar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px; */
+}
+
+.menuBar .account {
+    /* border: 1px solid red; */
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 0 ;
+    background-color: black;
+}
+
+.account .photo {
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.account .email {}
+
+.menuBar .content {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 20px; */
+    gap: 20px;
+}
+
+.content .body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .items {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+.content .icon {
+    /* border: 1px solid yellow; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.content a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+}
+
+.menuBar footer {
+    /* border: 1px solid blue; */
+    padding: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.flex2 {
+    width: 100%;
+    position: relative;
+    /* border: 1px solid red; */
+    /* padding: 0px; */
+}
+
+.flex2 header {
+    /* border: 1px solid red; */
+    padding: 10px 20px;
+    background: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--hclr);
+
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav .start {
+    /* border: 1px solid red; */
+    padding: 10px 20px;
+    /* display: flex; */
+    /* gap: 40px; */
+
+}
+
+nav .start a {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: white;
+}
+
+nav .start button {
+    background: none;
+    border: none;
+    font-size: 1.4em;
+    color: white;
+    display: none;
+}
+
+nav .end {
+    /* border: 1px solid red; */
+    padding: 10px 20px;
+    display: flex;
+    gap: 40px;
+    color: white;
+    height: 70px;
+}
+
+nav .end button {
+    /* border: 1px solid red; */
+    background: none;
+    border: none;
+    font-size: 1.4em;
+    color: white;
+}
+
+/* .flex2 footer {
+    padding: 30px;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: white;
+    z-index: -8;
+    text-align: center;
+} */
+
+/* .tog{
+        
+        transform: translateX(-100%);
+        z-index: 1;
+    } */
+
+
+.lgt{
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px) {
+
+    
+
+    /* .flex1{
+        position: absolute;
+        top: 100%;
+        transform: translateX(0);
+        background-color: white;
+        z-index: 1;
+    } */
+
+    .flex1 {
+        position: fixed;
+        top: 15%;
+        left: 0;
+        width: 250px;
+        height: 80vh;
+        background-color: white;
+        transform: translateX(-120%);
+        transition: 0.3s ease;
+        z-index: 1000;
+        padding: 0;
+    }
+
+    .flex1.tog {
+        transform: translateX(0);
+    }
+
+    .flex1 .menuBar .account .email {
+        /* gap: 10px; */
+    }
+
+    .flex2 {
+        padding: 0;
+    }
+
+/*     
+.flex2 footer{
+    z-index: 8;
+} */
+
+   .flex2 nav .start {
+        /* border: 1px solid red; */
+        padding: 10px 0px;
+        /* display: flex;
+        gap: 10px; */
+
+    }
+
+
+    .flex2 header {
+        /* border: 1px solid red; */
+        padding: 10px 10px;
+
+    }
+
+    nav .start a {
+        font-size: 1.2em;
+    }
+
+    nav .start button {
+        /* background: none; */
+        /* border: none; */
+        font-size: 1em;
+        /* background-color: aqua; */
+        /* border: 1px solid red; */
+
+    }
+
+    #barIcon{
+        display: block;
+        color: white;
+        font-size: 1.2em;
+    }
+
+    /* nav .start button:hover{
+    background-color: black;
+} */
+
+    nav .end {
+        /* border: 1px solid red; */
+        padding: 10px 0px;
+        display: flex;
+        gap: 10px;
+    }
+
+    nav .end button {
+        /* border: 1px solid red; */
+        background: none;
+        border: none;
+        font-size: 1.2em;
+    }
+
+    .menuBar .account {
+        /* border: 1px solid red; */
+        /* padding: 10px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .account .photo {
+        
+        height: 40px;
+        width: 40px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .account .email {
+        font-size: 0.8em;
+    }
+
+    .menuBar footer {
+    /* border: 1px solid blue; */
+    padding: 10px;
+    width: 100%;
+}
+}
+
+
+
+.middle {
+    padding: 20px;
+}
+
+.titleBox {
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+
+.cardBox {
+    /* border: 1px solid red; */
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.cardBox .infoCard {
+    /* border: 1px solid blue; */
+    flex: 1 1 200px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.cardBox .infoCard .top {
+    /* border: 1px solid yellowgreen; */
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+
+.infoCard .top .left {
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 60%;
+    color: white;
+
+
+}
+
+.infoCard .top .left h1,
+h3 {
+    padding: 10px;
+}
+
+.infoCard .top .right {
+    /* border: 1px solid orange; */
+    height: 100%;
+    width: 40%;
+    font-size: 4em;
+    display: grid;
+    place-items: center;
+
+
+}
+
+
+
+.cardBox .infoCard .bottom {
+    /* border: 1px solid teal; */
+    height: 20%;
+    display: grid;
+}
+
+.cardBox .infoCard .bottom button {
+    color: white;
+    border: none;
+}
+
+.cardBox .infoCard1 .top {
+    background: #17a2b8;
+}
+
+.cardBox .infoCard1 .top .right {
+    color: #1591a5;
+}
+
+.cardBox .infoCard1 .bottom button {
+    background: #1591a5;
+}
+
+
+
+.cardBox .infoCard2 .top {
+    background: #28a745;
+}
+
+.cardBox .infoCard2 .top .right {
+    color: #24963e;
+}
+
+.cardBox .infoCard2 .bottom button {
+    background: #24963e;
+}
+
+
+
+.cardBox .infoCard3 .top {
+    background: #ffc107;
+}
+
+.cardBox .infoCard3 .top .right {
+    color: #e5ad06;
+}
+
+.cardBox .infoCard3 .bottom button {
+    background: #e5ad06;
+}
+
+.cardBox .infoCard4 .top {
+    background: #dc3545;
+}
+
+.cardBox .infoCard4 .top .right {
+    color: #c6303e;
+}
+
+.cardBox .infoCard4 .bottom button {
+    background: #c6303e;
+}

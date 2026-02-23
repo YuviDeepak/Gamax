@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamax</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/product.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex1">
+            <div class="menuBar">
+                <div class="account">
+                    <div class="photo">
+                        <i class="fa-solid fa-user-secret"></i>
+                    </div>
+                    <div class="email">
+                        <h3>yuvi190@gmail.com</h3>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <h1>MENU</h1>
+                    </div>
+                    <div class="body">
+                        <div class="dashboard items">
+                            <div class="icon">
+                                <i class="fa-solid fa-gauge"></i>
+                            </div>
+                            <div class="info">
+                                <a href="index.html">Dashboard</a>
+                            </div>
+                        </div>
+                        <div class="category items">
+                            <div class="icon">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+                            <div class="info">
+                                <a href="category.html">Category</a>
+                            </div>
+                        </div>
+                        <div class="product items">
+                            <div class="icon">
+                                <i class="fa-brands fa-product-hunt"></i>
+                            </div>
+                            <div class="info">
+                                <a href="product.html">Product</a>
+                            </div>
+                        </div>
+                        <div class="logout items">
+                            <div class="icon">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </div>
+                            <div class="info">
+                                <a class="lgt">logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <h3>allRightsReserved</h3>
+                </footer>
+            </div>
+
+        </div>
+        <div class="flex2">
+            <header>
+                <nav>
+                    <div class="start">
+                        <button id="barIcon"><i class="fa-solid fa-bars"></i></button>
+                        <!-- <a href="#">Home</a> -->
+                        <!-- <a href="#">Contact</a> -->
+                    </div>
+                    <div class="end">
+                        <!-- <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button"><i class="fa-solid fa-comments"></i></button>
+                        <button type="button"><i class="fa-solid fa-bell"></i></button>
+                        <button type="button"><i class="fa-solid fa-maximize"></i></button> -->
+                        <h1 id="time"></h1>
+                        
+                    </div>
+                </nav>
+            </header>
+
+            <section class="middle">
+
+                <div class="middle1">
+                    <form action="">
+                        <h1>Product form</h1>
+                        <div class="iidd tag" style="display: none;">
+                            <input type="text" name="" id="id">
+                        </div>
+
+                        <div class="img tag">
+                            <input type="text" id="image" placeholder="Enter the url of an image">
+                            <span id="image_error" class="error"></span>
+                        </div>
+
+
+                        <div class="pro tag">
+                            <input type="text" id="product" placeholder="Enter the product name">
+                            <span id="product_error" class="error"></span>
+                        </div>
+
+
+                        <div class="cat tag">
+                            <!-- <input type="text" id="category" placeholder="Enter the category"> -->
+                             <select name="" id="category">
+                             </select>
+                            <span id="category_error" class="error"></span>
+                        </div>
+
+
+                        <div class="pri tag">
+                            <input type="number" id="price" placeholder="Enter the price">
+                            <span id="price_error" class="error"></span>
+                        </div>
+
+
+                        <div class="sto tag">
+                            <input type="number" id="stock" placeholder="Enter the stock">
+                            <span id="stock_error" class="error"></span>
+                        </div>
+
+
+                        <div class="off tag">
+                            <input type="number" id="offer" placeholder="Enter the offer">
+                            <span id="offer_error" class="error"></span>
+                        </div>
+
+                        <div class="btn tag">
+                            <button onclick="" type="button" id="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="middle2">
+                    <table border="1" cellspacing="0">
+                        <thead>
+                            <th>Product Id</th>
+                            <th>Image URL</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Offer</th>
+                            <th>Action</th>
+                        </thead>
+                        <tbody id="tablebody">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            <footer>
+
+            </footer>
+        </div>
+
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/product.js"></script>
+</body>
+
+</html>

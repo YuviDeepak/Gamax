@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&display=swap');
+
+
+:root {
+    --font: "Audiowide";
+    --baseclr: black;
+    --hclr: linear-gradient(to left,
+            #180936,
+            #2a0b69,
+            #3d1f79);
+    --btnclr: #2c014b;
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* border: 1px solid red; */
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 20px;
+    background: var(--hclr);
+    font-family: var(--font);
+
+}
+
+.error{
+    color: red;
+}
+
+.container form{
+    /* border: 1px solid red; */
+    display: flex;
+    /* align-items: start; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    padding: 20px 30px;
+   background-color: rgba(255, 255, 255, 0.558);
+   border-radius: 20px;
+   box-shadow: 0 0 5px;
+}
+
+form .box{
+    /* border: 1px solid red; */
+}
+
+form label{
+    font-size: 1.1em;
+}
+
+form input{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    background: rgba(0, 0, 0, 0.225);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+
+form .btn{
+    /* border: 1px solid red; */
+    display: grid;
+    place-items: center;
+    /* width: 100%; */
+}
+
+form .btn button{
+    padding: 1em 8em;
+    border-radius: 20px;
+    border: none;
+    background: var(--hclr);
+    color: white;
+    font-family: var(--font);
+}
+
+form .btn button:hover{
+    background: black;
+}
+form .new{
+    /* border: 1px solid red; */
+    display: grid;
+    place-items: center;
+}
+
+.new h4{
+    text-align: center;
+    /* display: flex;
+    gap: 20px; */
+}
+
+form .new button{
+    padding: 0.5em 1em;
+    /* border-radius: 20px; */
+    border: none;
+    background: none;
+    color: white;
+    /* font-size: ; */
+    background: var(--hclr);
+    font-family: var(--font);
+    border-radius: 20px;
+    margin-left: 10px;
+
+}
+
+form .new button:hover{
+    background: black;
+}

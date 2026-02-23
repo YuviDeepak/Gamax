@@ -1,0 +1,163 @@
+.middle {
+    /* padding-top: 60px; */
+    /* border: 1px solid blue; */
+    padding: 0;
+    
+}
+
+.middle .middle1 {
+    /* border: 1px solid yellow; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.middle1 form {
+    /* border: 1px solid red; */
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+    background: var(--hclr);
+    background: rgba(255, 255, 255, 0.347);
+    color: white;
+}
+
+.middle1 form h1 {
+    text-align: center;
+    font-size: 3em;
+
+}
+
+
+
+form .tag {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+form .tag input,
+option,
+select {
+    /* height: 30px; */
+    margin-bottom: 3px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 5px 8px 10px;
+    background-color: rgba(0, 0, 0, 0.807);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+form .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .btn button {
+    padding: 0.7em 5em;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+
+form .btn button:hover {
+    color: rgb(0, 0, 0);
+    background: white;
+}
+
+.middle .middle2 {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+table {
+    color: white;
+    font-size: 1.2em;
+
+}
+
+table tr td,
+th {
+    padding: 10px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+}
+
+table tr td img{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}
+
+table button{
+    padding: 0.6em 1em;
+    background: var(--hclr);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+@media screen and (max-width:576px) {
+    .middle {
+        padding-top: 00px;
+    }
+
+    .middle1{
+        /* padding: 40px; */
+    }
+
+    .middle1 form {
+        /* border: 1px solid red; */
+        padding: 20px 30px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .middle1 form h1 {
+        text-align: center;
+        font-size: 3em;
+
+    }
+
+    table {
+        
+    }
+
+    table {
+        color: white;
+        font-size: 0.5em;
+
+    }
+
+    table tr td,
+    th {
+        padding: 0px;
+        align-items: center;
+    }
+
+    table button{
+    padding: 0.3em 0.6em;
+    background: var(--hclr);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+}

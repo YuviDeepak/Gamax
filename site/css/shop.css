@@ -1,0 +1,122 @@
+.sop{
+    /* border: 1px solid red; */
+    padding: 20px;
+    display: flex;
+    position: relative;
+}
+
+.shopleft{
+    /* border: 1px solid yellow; */
+    position: sticky;
+    top: 150px;
+    height: fit-content;
+    background: var(--hclr);
+    color: white;
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+
+.shopleft .mbox{
+    border-radius: 20px;
+    /* border: 1px solid rgb(84, 9, 9); */
+    padding: 20px;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+.shopleft .mbox .fil{
+    /* border: 1px solid red; */
+    padding: 20px;
+    font-size: 1.5em;
+    display: grid;
+    place-items: center;
+    gap: 0px;
+}
+
+.shopleft .mbox .fil input,select{
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+    
+}
+
+.shopleft .mbox .fil select option{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.53);
+    padding-bottom: 30px;
+}
+
+.shleficon{
+    position: absolute;
+    display: none;
+}
+
+#shpoSearch{
+    padding: 1em 4em;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+}
+
+#shpoSearch:hover{
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (max-width:576px) {
+
+    .sop{
+    /* border: 1px solid red; */
+    padding: 0px;
+    display: block;
+    position: relative;
+    gap: 0;
+}
+
+.shleficon{
+    display: block;
+    /* transform: translateX(50%); */
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 10px  30px;
+    top: -0.3%;
+   
+    
+      
+}
+
+.shleficon #shlt{
+    font-size: 1.2em;
+    background:none;
+    border: none;
+    color: var(--btnclr);
+}
+
+    .shopleft{
+        position: absolute;
+        /* display: none; */
+        /* z-index: 9; */
+        z-index: 2;
+        top: 3%;
+        transition: 1s;
+    }
+    .vb{
+    transform: translateX(-100%);
+    transition: 1s;
+    /* color: aqua; */
+    opacity: 0.2;
+    /* z-index: -1; */
+    
+}
+
+.shopright{
+    padding-top: 50px;
+}
+}

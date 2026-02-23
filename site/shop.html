@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shop.css">
+</head>
+
+<body>
+
+    <header>
+        <label for="nav-check"><i class="fa-solid fa-bars"></i></label>
+        <div class="logo">
+            <div class="innerlogo">
+                <img src="./logo/logo-header.png" alt="">
+            </div>
+        </div>
+        <input type="checkbox" id="nav-check" style="display: none;">
+        <nav>
+            <span><a href="index.html">Home</a></span>
+            <span><a href="about.html">About</a></span>
+            <span><a href="shop.html">Shop</a></span>
+            <span><a href="contact.html">Contact</a></span>
+        </nav>
+        <div class="adc-fav">
+            <div class="adc">
+                <button type="button" id="goToCart"><i class="fa-solid fa-cart-plus"></i></button>
+                <!-- <a href="./addToCart.html">add</a> -->
+                <span class="cartCount">0</span>
+
+            </div>
+            <div class="fav">
+                <button type="button" id="lgot"><i class="fa-solid fa-right-from-bracket"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="CarouselContainer container console">
+        <div class="CarouselBanner">
+            <button type="button" class="BannerPrevious banbut"><</button>
+            <div class="BannerCollections">
+                <div class="BannerImages BannerImages1"><img src="./carBanimage/carban4.jpg" alt=""></div>
+                <div class="BannerImages BannerImages2"><img src="./carBanimage/carBan-2.png" alt=""></div>
+                <div class="BannerImages BannerImages3"><img src="./carBanimage/carban1.jpg" alt=""></div>
+                <div class="BannerImages BannerImages4"><img src="./carBanimage/carban3.jfif" ></div>
+            </div>
+            <button type="button" class="BannerNext banbut">></button>
+        </div>
+
+    </div>
+
+    
+
+
+    <div class="container category ">
+        <div class="title-box">
+            <h1>Categories</h1>
+        </div>
+        <div class="product-box">
+            <div class="categorycard1 categorycard">
+                <button>
+                    <h1>Action</h1>
+                </button>
+            </div>
+            <div class="categorycard2 categorycard">
+                <button>
+                    <h1>Adventure</h1>
+                </button>
+            </div>
+            <div class="categorycard3 categorycard">
+                <button>
+                    <h1>Simulation</h1>
+                </button>
+            </div>
+            <div class="categorycard4 categorycard">
+                <button>
+                    <h1>Historical</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container ">
+        <div class=" swiper">
+            <div class="swip-content">
+                <h1>Our Games</h1>
+                <h4>At great deals</h4>
+            </div>
+            <div class="banner">
+                <img src="" alt="" id="ban-id">
+            </div>
+            <div class="carosel">
+                <button id="prv">
+                    < </button>
+                        <div class="frame">
+                            <div class="slider">
+                                <!-- card-1 start -->
+
+                                <div class="card" data-id="1">
+                                    <div class="card-top">
+                                        <b class="discount">
+                                            <p class="offer">50</p>% off
+                                        </b>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                                        <div class="content">
+                                            <h2 class="cardProductName">GTA 5</h2>
+                                            <h4 class="cardCategory">Action</h4>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="card-adc it">
+                                                <button type="button" id="addtocart"><i
+                                                        class="fa-solid fa-cart-plus"></i></button>
+
+                                            </div>
+                                            <div class="card-fav it">
+                                                <button><i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+
+                                        <div class="pri">
+                                            <p>$<del class="price">200</del></p>
+                                            <b>$<span class="offerPrice">100</span></b>
+                                        </div>
+                                        <button type="button" id="buynow">Buy Now</button>
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- card-1 end -->
+
+
+                                <!-- card-2 start -->
+
+                                <div class="card" data-id="2">
+                                    <div class="card-top">
+                                        <b class="discount">
+                                            <p class="offer">50</p>% off
+                                        </b>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <img src="./card-img/games/RDR_2.jpg" alt="">
+                                        <div class="content">
+                                            <h2 class="cardProductName">GTA 6</h2>
+                                            <h4 class="cardCategory">Action</h4>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="card-adc it">
+                                                <button type="button" id="addtocart"><i
+                                                        class="fa-solid fa-cart-plus"></i></button>
+                                            </div>
+                                            <div class="card-fav it">
+                                                <button><i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+
+                                        <div class="pri">
+                                            <p>$<del class="price">200</del></p>
+                                            <b>$<span class="offerPrice">300</span></b>
+                                        </div>
+                                        <button type="button" id="buynow">Buy Now</button>
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- card-2 end -->
+
+
+
+
+                                <!-- card-3 start -->
+
+                                <div class="card" data-id="3">
+                                    <div class="card-top">
+                                        <b class="discount">
+                                            <p class="offer">50</p>% off
+                                        </b>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <img src="./card-img/games/ASSASINCREED.jpg" alt="">
+                                        <div class="content">
+                                            <h2 class="cardProductName">GTA 5</h2>
+                                            <h4 class="cardCategory">Action</h4>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="card-adc it">
+                                                <button type="button" id="addtocart"><i
+                                                        class="fa-solid fa-cart-plus"></i></button>
+                                            </div>
+                                            <div class="card-fav it">
+                                                <button><i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+
+                                        <div class="pri">
+                                            <p>$<del class="price">200</del></p>
+                                            <b>$<span class="offerPrice">100</span></b>
+                                        </div>
+                                        <button type="button" id="buynow">Buy Now</button>
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- card-3 end -->
+
+
+
+
+                                <!-- card-4 start -->
+
+                                <div class="card" data-id="4">
+                                    <div class="card-top">
+                                        <b class="discount">
+                                            <p class="offer">50</p>% off
+                                        </b>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <img src="./card-img/games/princeofpersia.jpg" alt="">
+                                        <div class="content">
+                                            <h2 class="cardProductName">GTA 5</h2>
+                                            <h4 class="cardCategory">Action</h4>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="card-adc it">
+                                                <button type="button" id="addtocart"><i
+                                                        class="fa-solid fa-cart-plus"></i></button>
+                                            </div>
+                                            <div class="card-fav it">
+                                                <button><i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+
+                                        <div class="pri">
+                                            <p>$<del class="price">200</del></p>
+                                            <b>$<span class="offerPrice">100</span></b>
+                                        </div>
+                                        <button type="button" id="buynow">Buy Now</button>
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- card-4 end -->
+
+
+
+                                <!-- card-5 start -->
+
+                                <div class="card" data-id="5">
+                                    <div class="card-top">
+                                        <b class="discount">
+                                            <p class="offer">50</p>% off
+                                        </b>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <img src="./card-img/games//mortalcombact.jpg" alt="">
+                                        <div class="content">
+                                            <h2 class="cardProductName">GTA 5</h2>
+                                            <h4 class="cardCategory">Action</h4>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="card-adc it">
+                                                <button type="button" id="addtocart"><i
+                                                        class="fa-solid fa-cart-plus"></i></button>
+                                            </div>
+                                            <div class="card-fav it">
+                                                <button><i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+
+                                        <div class="pri">
+                                            <p>$<del class="price">200</del></p>
+                                            <b>$<span class="offerPrice">100</span></b>
+                                        </div>
+                                        <button type="button" id="buynow">Buy Now</button>
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- card-5 end -->
+
+
+
+                                <!-- card-6 start -->
+
+                                <div class="card" data-id="6">
+                                    <div class="card-top">
+                                        <b class="discount">
+                                            <p class="offer">50</p>% off
+                                        </b>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <img src="./card-img/games/cod.jpeg" alt="">
+                                        <div class="content">
+                                            <h2 class="cardProductName">GTA 5</h2>
+                                            <h4 class="cardCategory">Action</h4>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="card-adc it">
+                                                <button type="button" id="addtocart"><i
+                                                        class="fa-solid fa-cart-plus"></i></button>
+                                            </div>
+                                            <div class="card-fav it">
+                                                <button><i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+
+                                        <div class="pri">
+                                            <p>$<del class="price">200</del></p>
+                                            <b>$<span class="offerPrice">100</span></b>
+                                        </div>
+                                        <button type="button" id="buynow">Buy Now</button>
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- card-6 end -->
+
+
+
+                                <!-- card-7 start -->
+
+                                <div class="card" data-id="7">
+                                    <div class="card-top">
+                                        <b class="discount">
+                                            <p class="offer">50</p>% off
+                                        </b>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <img src="./card-img/games/residentevil3.jpg" alt="">
+                                        <div class="content">
+                                            <h2 class="cardProductName">GTA 5</h2>
+                                            <h4 class="cardCategory">Action</h4>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="card-adc it">
+                                                <button type="button" id="addtocart"><i
+                                                        class="fa-solid fa-cart-plus"></i></button>
+                                            </div>
+                                            <div class="card-fav it">
+                                                <button><i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+
+                                        <div class="pri">
+                                            <p>$<del class="price">200</del></p>
+                                            <b>$<span class="offerPrice">100</span></b>
+                                        </div>
+                                        <button type="button" id="buynow">Buy Now</button>
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- card-7 end -->
+
+
+
+
+                                <!-- card-8 start -->
+
+                                <div class="card" data-id="8">
+                                    <div class="card-top">
+                                        <b class="discount">
+                                            <p class="offer">50</p>% off
+                                        </b>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <img src="./card-img/games/cricket26.avif" alt="">
+                                        <div class="content">
+                                            <h2 class="cardProductName">GTA 5</h2>
+                                            <h4 class="cardCategory">Action</h4>
+                                        </div>
+                                        <div class="icons">
+                                            <div class="card-adc it">
+                                                <button type="button" id="addtocart"><i
+                                                        class="fa-solid fa-cart-plus"></i></button>
+                                            </div>
+                                            <div class="card-fav it">
+                                                <button><i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+
+                                        <div class="pri">
+                                            <p>$<del class="price">200</del></p>
+                                            <b>$<span class="offerPrice">100</span></b>
+                                        </div>
+                                        <button type="button" id="buynow">Buy Now</button>
+
+
+                                    </div>
+                                </div>
+
+
+                                <!-- card-8 end -->
+
+                            </div>
+                        </div>
+                        <button id="nxt">></button>
+            </div>
+        </div>
+    </div>
+
+    <main class=" sop ">
+        <div class="shleficon">
+            <button type="button" id="shlt"><i class="fa-solid fa-bars"></i>Filter</button>
+        </div>
+        <section class="shopleft">
+            <div class="mbox">
+                <!-- <div class="filter"> -->
+                <div class="categoty fil">
+                    <h3>Category</h3>
+                    <select name="" id="shopCategory">
+
+                        <!-- <option value="">Action</option>
+                        <option value="">Adventure</option>
+                        <option value="">Simulation</option>
+                        <option value="">Historical</option> -->
+                    </select>
+                </div>
+                <!-- <div class="brand fil">
+                    <h3>Brands</h3>
+                    <select name="" id="">
+                        <option value="">Action</option>
+                        <option value="">Adventure</option>
+                        <option value="">Simulation</option>
+                        <option value="">Historical</option>
+                    </select>
+                </div> -->
+                <!-- <div class="price fil">
+                    <h3>Price</h3>
+                    <input type="range">
+                </div> -->
+
+                <div class="btn">
+                    <button type="button" id="shpoSearch">Search</button>
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+        <section class="shopright">
+
+            <div class="product-box">
+                <!-- card-1 start -->
+
+            <div class="card" data-id="1">
+                <div class="card-top">
+                    <b class="discount">
+                        <p class="offer">50</p>
+                        <p>%off</p>
+                    </b>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="./card-img/games/GTA-5.jpg" alt="">
+                    <div class="content">
+                        <h2 class="cardProductName">GTA 5</h2>
+                        <h4 class="cardCategory">Action</h4>
+                    </div>
+                    <div class="icons">
+                        <div class="card-adc it">
+                            <button type="button" class="addtocart"><i class="fa-solid fa-cart-plus"></i></button>
+
+                        </div>
+                        <div class="card-fav it">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+
+                    <div class="pri">
+                        <p>$<del class="price">200</del></p>
+                        <b>$<span class="offerPrice">100</span></b>
+                    </div>
+                    <button type="button" class="buynow">Buy Now</button>
+
+
+                </div>
+            </div>
+
+
+            <!-- card-1 end -->
+
+
+            <!-- card-2 start -->
+
+            <div class="card" data-id="2">
+                <div class="card-top">
+                    <b class="discount">
+                        <p class="offer">50</p>% off
+                    </b>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="./card-img/games/RDR_2.jpg" alt="">
+                    <div class="content">
+                        <h2 class="cardProductName">GTA 6</h2>
+                        <h4 class="cardCategory">Action</h4>
+                    </div>
+                    <div class="icons">
+                        <div class="card-adc it">
+                            <button type="button" class="addtocart"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                        <div class="card-fav it">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+
+                    <div class="pri">
+                        <p>$<del class="price">200</del></p>
+                        <b>$<span class="offerPrice">300</span></b>
+                    </div>
+                    <button type="button" class="buynow">Buy Now</button>
+
+
+                </div>
+            </div>
+
+
+            <!-- card-2 end -->
+
+
+
+
+            <!-- card-3 start -->
+
+            <div class="card" data-id="3">
+                <div class="card-top">
+                    <b class="discount">
+                        <p class="offer">50</p>% off
+                    </b>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="./card-img/games/ASSASINCREED.jpg" alt="">
+                    <div class="content">
+                        <h2 class="cardProductName">GTA 5</h2>
+                        <h4 class="cardCategory">Action</h4>
+                    </div>
+                    <div class="icons">
+                        <div class="card-adc it">
+                            <button type="button" class="addtocart"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                        <div class="card-fav it">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+
+                    <div class="pri">
+                        <p>$<del class="price">200</del></p>
+                        <b>$<span class="offerPrice">100</span></b>
+                    </div>
+                    <button type="button" class="buynow">Buy Now</button>
+
+
+                </div>
+            </div>
+
+
+            <!-- card-3 end -->
+
+
+
+
+            <!-- card-4 start -->
+
+            <div class="card" data-id="4">
+                <div class="card-top">
+                    <b class="discount">
+                        <p class="offer">50</p>% off
+                    </b>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="./card-img/games/princeofpersia.jpg" alt="">
+                    <div class="content">
+                        <h2 class="cardProductName">GTA 5</h2>
+                        <h4 class="cardCategory">Action</h4>
+                    </div>
+                    <div class="icons">
+                        <div class="card-adc it">
+                            <button type="button" class="addtocart"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                        <div class="card-fav it">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+
+                    <div class="pri">
+                        <p>$<del class="price">200</del></p>
+                        <b>$<span class="offerPrice">100</span></b>
+                    </div>
+                    <button type="button" class="buynow">Buy Now</button>
+
+
+                </div>
+            </div>
+
+
+            <!-- card-4 end -->
+
+
+
+            <!-- card-5 start -->
+
+            <div class="card" data-id="5">
+                <div class="card-top">
+                    <b class="discount">
+                        <p class="offer">50</p>% off
+                    </b>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="./card-img/games//mortalcombact.jpg" alt="">
+                    <div class="content">
+                        <h2 class="cardProductName">GTA 5</h2>
+                        <h4 class="cardCategory">Action</h4>
+                    </div>
+                    <div class="icons">
+                        <div class="card-adc it">
+                            <button type="button" class="addtocart"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                        <div class="card-fav it">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+
+                    <div class="pri">
+                        <p>$<del class="price">200</del></p>
+                        <b>$<span class="offerPrice">100</span></b>
+                    </div>
+                    <button type="button" class="buynow">Buy Now</button>
+
+
+                </div>
+            </div>
+
+
+            <!-- card-5 end -->
+
+
+
+            <!-- card-6 start -->
+
+            <div class="card" data-id="6">
+                <div class="card-top">
+                    <b class="discount">
+                        <p class="offer">50</p>% off
+                    </b>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="./card-img/games/cod.jpeg" alt="">
+                    <div class="content">
+                        <h2 class="cardProductName">GTA 5</h2>
+                        <h4 class="cardCategory">Action</h4>
+                    </div>
+                    <div class="icons">
+                        <div class="card-adc it">
+                            <button type="button" class="addtocart"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                        <div class="card-fav it">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+
+                    <div class="pri">
+                        <p>$<del class="price">200</del></p>
+                        <b>$<span class="offerPrice">100</span></b>
+                    </div>
+                    <button type="button" class="buynow">Buy Now</button>
+
+
+                </div>
+            </div>
+
+
+            <!-- card-6 end -->
+
+
+
+            <!-- card-7 start -->
+
+            <div class="card" data-id="7">
+                <div class="card-top">
+                    <b class="discount">
+                        <p class="offer">50</p>% off
+                    </b>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="./card-img/games/residentevil3.jpg" alt="">
+                    <div class="content">
+                        <h2 class="cardProductName">GTA 5</h2>
+                        <h4 class="cardCategory">Action</h4>
+                    </div>
+                    <div class="icons">
+                        <div class="card-adc it">
+                            <button type="button" class="addtocart"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                        <div class="card-fav it">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+
+                    <div class="pri">
+                        <p>$<del class="price">200</del></p>
+                        <b>$<span class="offerPrice">100</span></b>
+                    </div>
+                    <button type="button" class="buynow">Buy Now</button>
+
+
+                </div>
+            </div>
+
+
+            <!-- card-7 end -->
+
+
+
+
+            <!-- card-8 start -->
+
+            <div class="card" data-id="8">
+                <div class="card-top">
+                    <b class="discount">
+                        <p class="offer">50</p>% off
+                    </b>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="./card-img/games/cricket26.avif" alt="">
+                    <div class="content">
+                        <h2 class="cardProductName">GTA 5</h2>
+                        <h4 class="cardCategory">Action</h4>
+                    </div>
+                    <div class="icons">
+                        <div class="card-adc it">
+                            <button type="button" class="addtocart"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                        <div class="card-fav it">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+
+                    <div class="pri">
+                        <p>$<del class="price">200</del></p>
+                        <b>$<span class="offerPrice">100</span></b>
+                    </div>
+                    <button type="button" class="buynow">Buy Now</button>
+
+
+                </div>
+            </div>
+
+
+            <!-- card-8 end -->
+
+
+            </div>
+
+            <div class="product-box-1 product-box">
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- <div class="container category ">
+        <div class="title-box">
+            <h1>Categories</h1>
+        </div>
+        <div class="product-box">
+            <div class="categorycard11 categorycard">
+                <button>
+                    <h1>Joysticks</h1>
+                </button>
+            </div>
+            <div class="categorycard22 categorycard">
+                <button>
+                    <h1>Consoles</h1>
+                </button>
+            </div>
+            <div class="categorycard33 categorycard">
+                <button>
+                    <h1>Headphones</h1>
+                </button>
+            </div>
+            <div class="categorycard44 categorycard">
+                <button>
+                    <h1>Nintendo</h1>
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+    <!-- <main class=" sop ">
+        <div class="shleficon">
+            <button type="button" id="shlt"><i class="fa-solid fa-bars"></i>Filter</button>
+        </div>
+        <section class="shopleft">
+            <div class="mbox">
+                <div class="categoty fil">
+                    <h3>Category</h3>
+                    <select name="" id="">
+                        <option value="">Action</option>
+                        <option value="">Adventure</option>
+                        <option value="">Simulation</option>
+                        <option value="">Historical</option>
+                    </select>
+                </div>
+                <div class="brand fil">
+                    <h3>Brands</h3>
+                    <select name="" id="">
+                        <option value="">Action</option>
+                        <option value="">Adventure</option>
+                        <option value="">Simulation</option>
+                        <option value="">Historical</option>
+                    </select>
+                </div>
+                <div class="price fil">
+                    <h3>Price</h3>
+                    <input type="range">
+                </div>
+        
+            </div>
+        </section>
+        <section class="shopright">
+
+            <div class="product-box">
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-top">
+                        <b class="discount">50% off</b>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="./card-img/games/GTA-5.jpg" alt="">
+                        <div class="content">
+                            <h2>GTA 5</h2>
+                            <h4>Adventure Action</h4>
+                        </div>
+                        <div class="icons">
+                            <div class="card-adc it">
+                                <button><i class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                            <div class="card-fav it">
+                                <button><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="pri">
+                            <del class="price">$200</del>
+                            <b>$100</b>
+                        </div>
+                        <button>Buy Now</button>
+
+
+                    </div>
+                </div>
+
+
+                
+
+
+            </div>
+
+        </section>
+    </main> -->
+
+
+
+    <footer>
+        <article class="leftf">
+            <h1>EXP</h1>
+            <section class="image">
+
+            </section>
+        </article>
+        <article class="rightff">
+            <section class="link-1 link">
+                <h3><a href="index.html">Home</a></h3>
+                <h3><a href="about.html">About</a></h3>
+                <h3><a href="shop.html">Shop</a></h3>
+                <h3><a href="contact.html">Contact</a></h3>
+            </section>
+            <section class="link-2 link">
+                <h3><a href="index.html">Blog</a></h3>
+                <h3><a href="shop.html">Offers</a></h3>
+                <h3><a href="contact.html">help</a></h3>
+                <h3><a href="contact.html">FAQ</a></h3>
+            </section>
+            <section class="link-3 link">
+                <div class="nu cc">
+                    <h3>Contact</h3>
+                    <p>6381243283</p>
+                </div>
+                <div class="ch cc">
+                    <h3>Chat wit us</h3>
+                    <p>6381243283</p>
+                </div>
+            </section>
+        </article>
+    </footer>
+    <!-- <script src="./js/addToCart.js"></script> -->
+
+    <script src="./js/shop.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/contact.js"></script>
+
+
+</body>
+
+</html>
