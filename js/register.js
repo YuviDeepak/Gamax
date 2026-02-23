@@ -43,7 +43,7 @@ RegBtnYes.addEventListener("click", (e) => {
 })
 
 goToLogin.addEventListener("click",(e)=>{
-    window.location.href="index.html"
+    window.location.href="./index.html"
 })
 
 // let goToSite=document.querySelector("#goToSite")

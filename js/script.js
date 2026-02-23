@@ -15,7 +15,7 @@ logInBtnYes.addEventListener("click", (e) => {
 })
 
 document.querySelector("#goToRegister").addEventListener("click",()=>{
-    window.location.href="register.html"
+    window.location.href="./register.html"
 })
 
 goToAdminLogin.addEventListener("click",()=>{
