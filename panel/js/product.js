@@ -201,7 +201,7 @@ function submit() {
             })
         }
 
-
+        pID.value=""
         image.value = ""
         product.value = ""
         category.value = ""
