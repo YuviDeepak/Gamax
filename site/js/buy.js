@@ -5,11 +5,30 @@ createbuy()
 
 let lgot = document.querySelector("#lgot")
 lgot.addEventListener("click",()=>{
-    let sure = confirm("Do you want to Log Out")
-    if(sure){
+    // let sure = confirm("Do you want to Log Out")
+    // if(sure){
 
-        window.location.href="../index.html"
-    }
+    //     window.location.href="../index.html"
+    // }
+     Swal.fire({
+        title: "Are you sure?",
+        // text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        // confirmButtonColor: "#3085d6",
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "LogOut"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: "Deleted!",
+                text: "Your file has been deleted.",
+                icon: "success"
+            });
+            window.location.href = "../index.html"
+        }
+    });
 })
 
 function createbuy() {
@@ -56,16 +75,31 @@ document.querySelector("#addcrtt").addEventListener("click",(e)=>{
     if(Decrease){
         if(buynowObj.quantity>1)
             buynowObj.quantity--
-        else
-            alert("You have reached the minimum quantity")
+        else{
+
+                    Swal.fire({
+                    // position: "top-end",
+                    icon: "error",
+                    title: "Minimum Quantity reached",
+                    showConfirmButton: false,
+                    timer: 1200
+                });
+                }
     }
 
     else if (Increase) {
         if(buynowObj.quantity<10)
             buynowObj.quantity++;
         else{
-            alert("You have reached the maximum quantity")
-        }
+
+                    Swal.fire({
+                    // position: "top-end",
+                    icon: "error",
+                    title: "Maximum Quantity reached",
+                    showConfirmButton: false,
+                    timer: 1200
+                });
+                }
     }
 
     else{
@@ -80,14 +114,41 @@ document.querySelector("#addcrtt").addEventListener("click",(e)=>{
 
 function end(){
 
-    let su=confirm("Do you want to buy the product")
-    if(su){
+    // let su=confirm("Do you want to buy the product")
+    // if(su){
 
-        alert("Payment Successful")
-        window.location.href="index.html"
-    }
-    // let cc = confirm("Payment Successful")
-    // if(cc){
+    //     alert("Payment Successful")
     //     window.location.href="index.html"
     // }
+    // // let cc = confirm("Payment Successful")
+    // // if(cc){
+    // //     window.location.href="index.html"
+    // // }
+
+    Swal.fire({
+            title: "Are you sure?",
+            // text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Buy Now"
+            }).then((result) => {
+              if (result.isConfirmed) {
+                Swal.fire({
+                // position: "top-end",
+                icon: "success",
+                title: "Purchase Successfull",
+                showConfirmButton: false,
+                timer: 2000
+            });
+                // localStorage.removeItem("cartArray");   // clear cart
+                // createCard()
+                setTimeout(() => {
+                    
+                    window.location.href = "index.html";
+                }, 2100);
+              }
+                 
+            });
 }

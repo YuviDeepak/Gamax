@@ -164,8 +164,20 @@ function register() {
         if (!occuremail) {
             registerArray.push(obj)
             localStorage.setItem("registerArray", JSON.stringify(registerArray));
-            alert("Registeration Successfull")
-            window.location.href="index.html"
+            // alert("Registeration Successfull")
+            // window.location.href="index.html"
+            Swal.fire({
+                // position: "top-end",
+                icon: "success",
+                title: "Registeration Successfull",
+                showConfirmButton: false,
+                timer: 1500
+            });
+
+            setTimeout(() => {
+
+                window.location.href="index.html"
+            }, 1000);
         }
         else {
             alert("already Exist")

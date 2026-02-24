@@ -52,9 +52,9 @@ function loadshop() {
 
 }
 
-document.querySelector("#shpoSearch").addEventListener("click",()=>{
+// document.querySelector("#shpoSearch").addEventListener("click",()=>{
 
-    alert("hi")
+//     alert("hi")
 
-})
+// })
 

@@ -15,12 +15,13 @@ logInBtnYes.addEventListener("click", (e) => {
     login()
 })
 
-document.querySelector("#goToRegister").addEventListener("click",()=>{
-    window.location.href="./register.html"
+document.querySelector("#goToRegister").addEventListener("click", () => {
+    
+    window.location.href = "./register.html"
 })
 
-goToAdminLogin.addEventListener("click",()=>{
-    window.location.href="./panel/login.html"
+goToAdminLogin.addEventListener("click", () => {
+    window.location.href = "./panel/login.html"
 })
 
 function login() {
@@ -32,7 +33,7 @@ function login() {
         logInemail.style.border = "1px solid red"
     }
 
-    else if (regx.test(logInemail.value)){
+    else if (regx.test(logInemail.value)) {
         EmailError.innerText = ""
         logInemail.style.border = "1px solid black"
         islogInemail = true
@@ -52,34 +53,45 @@ function login() {
         loginPassword.style.border = "1px solid black"
         isloginPassword = true
     }
-if (isloginPassword && islogInemail) {
+    if (isloginPassword && islogInemail) {
 
-    let useremail = logInemail.value;
-    let userpassword = loginPassword.value;
+        let useremail = logInemail.value;
+        let userpassword = loginPassword.value;
 
-    // Check email first
-    let user = registerArray.find(e => 
-        e.userEmail === useremail
-    );
+        // Check email first
+        let user = registerArray.find(e =>
+            e.userEmail === useremail
+        );
 
-    if (!user) {
-        
-        EmailError.innerText = "Invalid Email"
-        EmailError.style.color="red"
-        logInemail.style.border = "1px solid red"
-        // alert("Invalid Email");
+        if (!user) {
 
-    } 
-    else if (user.userPassword !== userpassword) {
-        PasswordError.innerText = "Invalid Password"
-        loginPassword.style.border = "1px solid red"
-        // alert("Invalid Password");
-    } 
-    else {
-        alert("Login Successfull")
-        window.location.href = "./site/index.html";
+            EmailError.innerText = "Invalid Email"
+            EmailError.style.color = "red"
+            logInemail.style.border = "1px solid red"
+            // alert("Invalid Email");
+
+        }
+        else if (user.userPassword !== userpassword) {
+            PasswordError.innerText = "Invalid Password"
+            loginPassword.style.border = "1px solid red"
+            // alert("Invalid Password");
+        }
+        else {
+            // alert("Login Successfull")
+            Swal.fire({
+                // position: "top-end",
+                icon: "success",
+                title: "LogIn successfull",
+                showConfirmButton: false,
+                timer: 1500
+            });
+
+            setTimeout(() => {
+
+                window.location.href = "./site/index.html";
+            }, 1000);
+        }
     }
-}
 
 
 

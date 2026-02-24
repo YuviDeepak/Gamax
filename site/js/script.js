@@ -102,10 +102,24 @@ document.querySelectorAll(".product-box").forEach(box=>{
                 let newproduct=createProduct(card,productId)
                 NewCartElement(newproduct,cartArray)
                 cartCount.innerText=cartArray.length
-                alert("Product added to the cart")
+                // alert("Product added to the cart")
+                Swal.fire({
+                // position: "top-end",
+                icon: "success",
+                title: "Product added to the cart",
+                showConfirmButton: false,
+                timer: 1500
+            });
             }
             else{
-                alert("Product already added to the Cart")
+                // alert("Product already added to the Cart")
+                 Swal.fire({
+                // position: "top-end",
+                icon: "error",
+                title: "Product already added to the cart",
+                showConfirmButton: false,
+                timer: 1500
+            });
             }
         }
         else if(buyBtn){

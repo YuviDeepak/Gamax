@@ -39,11 +39,25 @@ function addCategory() {
         if(upteIndex!=null){
             CatArray[upteIndex]=adminCategory.value
             upteIndex=null
-            alert("Category updated successfully")
+            // alert("Category updated successfully")
+            Swal.fire({
+                // position: "top-end",
+                icon: "success",
+                title: "Category updated successfully",
+                showConfirmButton: false,
+                timer: 1500
+            });
         }
         else{
             CatArray.push(adminCategory.value)
-            alert("Category added successfully")
+            // alert("Category added successfully")
+             Swal.fire({
+                // position: "top-end",
+                icon: "success",
+                title: "Category added successfully",
+                showConfirmButton: false,
+                timer: 1500
+            });
         }
         admnCat_error.innerText = ""
         adminCategory.style.border = "1px solid black"
@@ -93,25 +107,48 @@ function updatecategory(index){
 
 
 function removecategory(cat){
-    let confir=confirm("Do you want to delete the product")
-    if(confir){
+    // let confir=confirm("Do you want to delete the product")
+    // if(confir){
 
-         let CatArray = JSON.parse(localStorage.getItem("CatArray")) || []
+    //      let CatArray = JSON.parse(localStorage.getItem("CatArray")) || []
+
+    // CatArray=CatArray.filter(e=>e!=cat)
+    // localStorage.setItem("CatArray", JSON.stringify(CatArray))
+
+    // catDataTab() 
+    // alert("Category deleted successfully")
+    Swal.fire({
+          title: "Are you sure?",
+          text: "Do you want to remove the Category",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire({
+              title: "Deleted!",
+              text: "Category has been deleted.",
+              icon: "success"
+            });
+            let CatArray = JSON.parse(localStorage.getItem("CatArray")) || []
 
     CatArray=CatArray.filter(e=>e!=cat)
     localStorage.setItem("CatArray", JSON.stringify(CatArray))
 
     catDataTab() 
-    alert("Category deleted successfully")
+          }
+        });
 }
 
-else{
-        alert("Category is safe")
+// else{
+//         alert("Category is safe")
 
-    }
+//     }
    
 
-}
+// }
 
 catDataTab() 
 

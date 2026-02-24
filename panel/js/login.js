@@ -74,7 +74,20 @@ function login() {
         // )
 
         // if (user) {
-            window.location.href="../panel/index.html"
+        Swal.fire({
+                // position: "top-end",
+                icon: "success",
+                title: "LogIn successfull",
+                showConfirmButton: false,
+                timer: 1500
+            });
+
+            setTimeout(() => {
+
+                window.location.href = "../panel/index.html";
+            }, 1000);
+
+            // window.location.href="../panel/index.html"
         // }
         
         

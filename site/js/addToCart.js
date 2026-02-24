@@ -110,13 +110,40 @@ function createCard() {
 
     function tata(){
 
-        let sure=confirm("Confirm the Purchase")
-        if(sure){
-            alert("Payment Successfull")
-            localStorage.removeItem("cartArray");   // clear cart
-            window.location.href = "index.html"; 
+        // let sure=confirm("Confirm the Purchase")
+        // if(sure){
+            // alert("Payment Successfull")
+            // localStorage.removeItem("cartArray");   // clear cart
+            // window.location.href = "index.html"; 
 
-        }
+        // }
+        Swal.fire({
+            title: "Are you sure?",
+            // text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Buy Now"
+            }).then((result) => {
+              if (result.isConfirmed) {
+                Swal.fire({
+                // position: "top-end",
+                icon: "success",
+                title: "Purchase Successfull",
+                showConfirmButton: false,
+                timer: 2000
+            });
+                localStorage.removeItem("cartArray");   // clear cart
+                createCard()
+                // setTimeout(() => {
+                    
+                //     window.location.href = "index.html";
+                // }, 2000);
+              }
+                 
+            });
+            
 
     }
 
@@ -129,8 +156,17 @@ function createCard() {
             if(e.id==iidd){
                 if(e.quantity<10)
                     e.quantity++
-                else
-                    alert("Maximum Quantity reached")
+                else{
+                     Swal.fire({
+                // position: "top-end",
+                icon: "error",
+                title: "Maximum Quantity reached",
+                showConfirmButton: false,
+                timer: 1200
+            });
+                }
+                    // alert("Maximum Quantity reached")
+               
             }
         })
 
@@ -145,8 +181,17 @@ function createCard() {
             if(e.id==iidd){
                 if(e.quantity>1)
                     e.quantity--
-                else
-                    alert("Manimum Quantity reached")
+                else{
+
+                    Swal.fire({
+                    // position: "top-end",
+                    icon: "error",
+                    title: "Minimum Quantity reached",
+                    showConfirmButton: false,
+                    timer: 1200
+                });
+                }
+                    // alert("Manimum Quantity reached")
             }
         })
 
@@ -163,18 +208,46 @@ function createCard() {
         window.location.href="index.html"
     }
     function cardRemove(prid){
-        let ask = confirm("Do you want to remove product")
-        if(ask){
+        // let ask = confirm("Do you want to remove product")
+        // if(ask){
 
-            let cartArray = JSON.parse(localStorage.getItem("cartArray")) || []
-             cartArray = cartArray.filter((e)=>{
+            // let cartArray = JSON.parse(localStorage.getItem("cartArray")) || []
+            //  cartArray = cartArray.filter((e)=>{
+            //     if(e.id != prid){
+            //         return e
+            //     }
+            // })
+            // localStorage.setItem("cartArray", JSON.stringify(cartArray));
+            // createCard()
+        // }
+
+        Swal.fire({
+            title: "Are you sure?",
+            // text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Remove from cart"
+            }).then((result) => {
+              if (result.isConfirmed) {
+                Swal.fire({
+                // position: "top-end",
+                icon: "success",
+                title: "Removed successfully",
+                showConfirmButton: false,
+                timer: 1500
+            });
+                let cartArray = JSON.parse(localStorage.getItem("cartArray")) || []
+                cartArray = cartArray.filter((e)=>{
                 if(e.id != prid){
                     return e
                 }
             })
             localStorage.setItem("cartArray", JSON.stringify(cartArray));
             createCard()
-        }
+              }
+        });
     }
 
     // function addqty(iidd){

@@ -309,19 +309,45 @@ function upte(proid) {
 
 function delt(proid) {
 
-    let sure = confirm("do you want to Delete Product id?")
-    if (sure) {
-        product_list_array = product_list_array.filter((e) => {
+    Swal.fire({
+          title: "Are you sure?",
+          text: "Do you want to remove the Product",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire({
+              title: "Deleted!",
+              text: "Product has been deleted.",
+              icon: "success"
+            });
+            product_list_array = product_list_array.filter((e) => {
             if (e.id != proid) {
                 return e
             }
         })
+
         localStorage.setItem("product_list", JSON.stringify(product_list_array))
         loadData()
-    }
-    else {
-        alert("Your Product is safe")
-    }
+          }
+        });
+
+    // let sure = confirm("do you want to Delete Product id?")
+    // if (sure) {
+        // product_list_array = product_list_array.filter((e) => {
+        //     if (e.id != proid) {
+        //         return e
+        //     }
+        // })
+        // localStorage.setItem("product_list", JSON.stringify(product_list_array))
+        // loadData()
+    // }
+    // else {
+    //     alert("Your Product is safe")
+    // }
 }
 
 loadData();
