@@ -23,7 +23,7 @@ let admnCat_error = document.querySelector("#admnCat_error")
 
 
 function addCategory() {
-    debugger;
+    // debugger;
     let CatArray = JSON.parse(localStorage.getItem("CatArray")) || []
     let ans=(CatArray.includes(adminCategory.value))
     if (adminCategory.value === "") {

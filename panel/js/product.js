@@ -201,7 +201,13 @@ function submit() {
                 offer: offer.value
             }
             product_list_array.push(obj)
-            alert("Product has been added")
+            Swal.fire({
+                // position: "top-end",
+                icon: "success",
+                title: "Product added successfully",
+                showConfirmButton: false,
+                timer: 1500
+            });
         }
 
         else {
@@ -217,7 +223,13 @@ function submit() {
                         offer: offer.value
                     }
                 }
-                alert("Product has been upated")
+                Swal.fire({
+                // position: "top-end",
+                icon: "success",
+                title: "Product updated successfully",
+                showConfirmButton: false,
+                timer: 1500
+            });
                 return e
             })
         }
